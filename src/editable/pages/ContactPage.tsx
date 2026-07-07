@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import { Building2, FileText, Image as ImageIcon, Mail, MapPin, Phone, Sparkles, Bookmark } from 'lucide-react'
 import { pagesContent } from '@/editable/content/pages.content'
@@ -40,7 +40,7 @@ function getLanes(kind: ReturnType<typeof getProductKind>) {
   return [
     { icon: Bookmark, title: 'Collection submissions', body: 'Suggest resources, boards, and links that deserve a place in the library.' },
     { icon: Mail, title: 'Resource partnerships', body: 'Coordinate curation projects, reference pages, and link programs.' },
-    { icon: Sparkles, title: 'Curator support', body: 'Need help organizing shelves, collections, or profile-connected boards?' },
+    { icon: Sparkles, title: 'Curator support', body: 'Need help organizing shelves, collections, or contributor-linked boards?' },
   ]
 }
 
@@ -77,3 +77,4 @@ export default function ContactPage() {
     </EditableSiteShell>
   )
 }
+
