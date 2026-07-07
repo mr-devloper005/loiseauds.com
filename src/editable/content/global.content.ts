@@ -1,37 +1,30 @@
-import { slot4BrandConfig } from '@/editable/theme/brand.config'
+﻿import { slot4BrandConfig } from '@/editable/theme/brand.config'
 
 export const globalContent = {
   site: {
     name: slot4BrandConfig.siteName,
-    tagline: slot4BrandConfig.tagline || 'Independent reading platform',
+    tagline: slot4BrandConfig.tagline || 'Reference library platform',
     domain: slot4BrandConfig.domain,
     baseUrl: slot4BrandConfig.baseUrl,
   },
   nav: {
-    tagline: 'Independent reading platform',
+    tagline: 'Reference library platform',
     primaryLinks: [
-      { label: 'Articles', href: '/articles' },
-      { label: 'Visuals', href: '/image-sharing' },
-      { label: 'Listings', href: '/listings' },
+      { label: 'About', href: '/about' },
       { label: 'Contact', href: '/contact' },
     ],
     actions: {
-      primary: { label: 'Start exploring', href: '/' },
-      secondary: { label: 'Submit', href: '/contact' },
+      primary: { label: 'Open library', href: '/pdf' },
+      secondary: { label: 'Submit', href: '/create' },
     },
   },
   footer: {
-    tagline: 'Stories, resources, and discoverable posts',
-    description: 'A connected publishing surface for articles, visuals, listings, profiles, bookmarks, and downloadable resources.',
+    tagline: 'Guides, reports, and resources',
+    description: 'A focused reference platform for collecting, browsing, and using practical resources without noisy directory surfaces.',
     columns: [
       {
-        title: 'Explore',
-        links: [
-          { label: 'Articles', href: '/articles' },
-          { label: 'Listings', href: '/listings' },
-          { label: 'Images', href: '/image-sharing' },
-          { label: 'PDF Library', href: '/pdf' },
-        ],
+        title: 'Discovery',
+        links: [{ label: 'Reference Library', href: '/pdf' }],
       },
       {
         title: 'Site',
@@ -41,10 +34,10 @@ export const globalContent = {
         ],
       },
     ],
-    bottomNote: 'Built for clean discovery and connected publishing.',
+    bottomNote: 'Built for clean resource discovery.',
   },
   commonLabels: {
-    readMore: 'Read more',
+    readMore: 'Open resource',
     viewAll: 'View all',
     explore: 'Explore',
     latest: 'Latest',
@@ -52,3 +45,4 @@ export const globalContent = {
     published: 'Published',
   },
 } as const
+
